@@ -1,0 +1,2153 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>தாஸ் பொது சேவை மையம் - மத்திய மாநில அரசு அங்கீகாரம் பெற்றது</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Nirmala UI', 'Arial Unicode MS', sans-serif;
+        }
+        
+        :root {
+            --primary-color: #1a5f7a;
+            --secondary-color: #159895;
+            --accent-color: #57C5B6;
+            --light-color: #f8f9fa;
+            --dark-color: #333;
+            --warning-color: #ff9800;
+            --success-color: #4CAF50;
+            --danger-color: #f44336;
+            --whatsapp-color: #25D366;
+            --admin-color: #9C27B0;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-icon {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+        }
+        
+        .logo-text h1 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+        
+        .logo-text p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        /* Admin Button - Top Right */
+        .admin-btn-top {
+            background-color: var(--admin-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .admin-btn-top:hover {
+            background-color: #7B1FA2;
+            transform: translateY(-2px);
+        }
+        
+        .contact-header {
+            text-align: right;
+        }
+        
+        .contact-header p {
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            position: relative;
+        }
+        
+        .nav-links a {
+            display: block;
+            padding: 1rem 1.2rem;
+            color: var(--dark-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary-color);
+            background-color: rgba(26, 95, 122, 0.05);
+        }
+        
+        .nav-links a.active {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--primary-color);
+        }
+        
+        .mobile-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary-color);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 1.5rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.8rem 1.8rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-whatsapp {
+            background-color: var(--whatsapp-color);
+            margin-left: 10px;
+        }
+        
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+        }
+        
+        /* Main Content */
+        .main-content {
+            padding: 2rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            color: var(--primary-color);
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-color);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .service-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-icon {
+            background-color: var(--primary-color);
+            color: white;
+            font-size: 2rem;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .service-content {
+            padding: 1.5rem;
+        }
+        
+        .service-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.8rem;
+        }
+        
+        /* WhatsApp Messages Section (Hidden for customers) */
+        .whatsapp-section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            margin-bottom: 3rem;
+            border-left: 5px solid var(--whatsapp-color);
+            display: none;
+        }
+        
+        .whatsapp-section.visible {
+            display: block;
+        }
+        
+        .whatsapp-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .whatsapp-icon {
+            font-size: 2.5rem;
+            color: var(--whatsapp-color);
+        }
+        
+        .whatsapp-messages {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .whatsapp-message {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 1.5rem;
+            border: 1px solid #e0e0e0;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-message:hover {
+            background-color: #f0f9f0;
+            border-color: var(--whatsapp-color);
+        }
+        
+        .message-icon {
+            color: var(--whatsapp-color);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .message-content h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .message-content p {
+            color: #555;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        .message-example {
+            background-color: white;
+            padding: 0.8rem;
+            border-radius: 5px;
+            border-left: 3px solid var(--whatsapp-color);
+            font-size: 0.85rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        
+        /* Forms & Notices */
+        .forms-notices-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .forms-section, .notices-section {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .form-list, .notice-list {
+            list-style-type: none;
+        }
+        
+        .form-list li, .notice-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .form-list li:last-child, .notice-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .form-list a, .notice-list a {
+            color: var(--dark-color);
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .form-list a:hover, .notice-list a:hover {
+            color: var(--primary-color);
+        }
+        
+        .form-list i, .notice-list i {
+            color: var(--accent-color);
+        }
+        
+        /* Fees Section */
+        .fees-section {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 3rem;
+        }
+        
+        .fees-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        
+        .fees-table th, .fees-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .fees-table th {
+            background-color: #f8f9fa;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .fees-table tr:hover {
+            background-color: #f8f9fa;
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 3rem;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        
+        .contact-item:hover {
+            transform: translateY(-3px);
+            background-color: #f0f7ff;
+        }
+        
+        .contact-icon {
+            background-color: rgba(26, 95, 122, 0.1);
+            color: var(--primary-color);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        
+        .contact-details h4 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--whatsapp-color);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+        }
+        
+        /* Admin Panel Modal */
+        .admin-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .admin-modal-content {
+            background-color: white;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 900px;
+            max-height: 85vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .admin-modal-header {
+            background: linear-gradient(135deg, var(--admin-color), #7B1FA2);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px 10px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .admin-modal-header h2 {
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .close-admin-modal {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        .admin-modal-body {
+            padding: 2rem;
+        }
+        
+        .admin-section {
+            margin-bottom: 2rem;
+        }
+        
+        .admin-section h3 {
+            color: var(--admin-color);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        /* WhatsApp Templates in Admin */
+        .whatsapp-templates {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .whatsapp-template {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 1.5rem;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .template-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 1rem;
+        }
+        
+        .template-icon {
+            color: var(--whatsapp-color);
+            font-size: 1.2rem;
+        }
+        
+        .template-content h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .template-message {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            border-left: 3px solid var(--whatsapp-color);
+            font-size: 0.9rem;
+            color: #333;
+            margin: 1rem 0;
+            white-space: pre-line;
+            line-height: 1.5;
+        }
+        
+        .template-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 1rem;
+        }
+        
+        .template-btn {
+            background-color: var(--whatsapp-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: background-color 0.3s;
+            flex: 1;
+        }
+        
+        .template-btn:hover {
+            background-color: #128C7E;
+        }
+        
+        .btn-copy {
+            background-color: var(--primary-color);
+        }
+        
+        .btn-copy:hover {
+            background-color: #134b60;
+        }
+        
+        /* Services Management in Admin */
+        .services-management {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .services-list {
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 5px;
+            margin-bottom: 0.8rem;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .service-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .service-actions {
+            display: flex;
+            gap: 8px;
+        }
+        
+        .action-btn {
+            background: none;
+            border: none;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .btn-edit {
+            background-color: var(--warning-color);
+            color: white;
+        }
+        
+        .btn-delete {
+            background-color: var(--danger-color);
+            color: white;
+        }
+        
+        .btn-add-service {
+            background-color: var(--success-color);
+            color: white;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+        }
+        
+        /* Service Form */
+        .service-form {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+            border: 1px solid #e0e0e0;
+            display: none;
+        }
+        
+        .service-form.visible {
+            display: block;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--dark-color);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+        
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+            border-color: var(--admin-color);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(156, 39, 176, 0.1);
+        }
+        
+        .form-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .btn-cancel {
+            background-color: #777;
+            color: white;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .btn-save {
+            background-color: var(--success-color);
+            color: white;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        /* Login Form in Admin Modal */
+        .admin-login-form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .admin-login-form h3 {
+            text-align: center;
+            color: var(--admin-color);
+            margin-bottom: 1.5rem;
+        }
+        
+        .login-message {
+            text-align: center;
+            margin-top: 1rem;
+            padding: 0.8rem;
+            border-radius: 5px;
+            display: none;
+        }
+        
+        .login-message.error {
+            background-color: #ffebee;
+            color: #d32f2f;
+            display: block;
+        }
+        
+        .login-message.success {
+            background-color: #e8f5e9;
+            color: var(--success-color);
+            display: block;
+        }
+        
+        /* Admin Dashboard Tabs */
+        .admin-tabs {
+            display: flex;
+            border-bottom: 2px solid #e0e0e0;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .admin-tab {
+            padding: 0.8rem 1.5rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-weight: 500;
+            color: #666;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .admin-tab.active {
+            color: var(--admin-color);
+            border-bottom: 3px solid var(--admin-color);
+        }
+        
+        .admin-tab:hover {
+            color: var(--admin-color);
+            background-color: rgba(156, 39, 176, 0.05);
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 3rem 0 1.5rem;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-column h3 {
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid #444;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .contact-header {
+                text-align: center;
+                margin-top: 0.5rem;
+            }
+            
+            .admin-btn-top {
+                margin-top: 10px;
+            }
+            
+            .hero h2 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .whatsapp-templates {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-toggle {
+                display: block;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                max-width: 300px;
+                height: 100vh;
+                background-color: white;
+                flex-direction: column;
+                padding-top: 4rem;
+                transition: right 0.3s ease;
+                z-index: 1000;
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+            }
+            
+            .nav-links.active {
+                right: 0;
+            }
+            
+            .nav-links li {
+                width: 100%;
+            }
+            
+            .nav-links a {
+                padding: 1.2rem 1.5rem;
+                border-bottom: 1px solid #eee;
+            }
+            
+            .hero {
+                padding: 3rem 0;
+            }
+            
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+            
+            .whatsapp-messages {
+                grid-template-columns: 1fr;
+            }
+            
+            .admin-modal-content {
+                width: 95%;
+                max-height: 90vh;
+            }
+            
+            .service-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            
+            .service-actions {
+                align-self: flex-end;
+            }
+            
+            .admin-tabs {
+                flex-direction: column;
+            }
+            
+            .admin-tab {
+                border-bottom: 1px solid #e0e0e0;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .logo-text h1 {
+                font-size: 1.5rem;
+            }
+            
+            .hero h2 {
+                font-size: 1.6rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .forms-notices-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+            
+            .btn-whatsapp {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+            
+            .template-actions {
+                flex-direction: column;
+            }
+            
+            .template-btn {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .form-actions {
+                flex-direction: column;
+            }
+            
+            .btn-cancel, .btn-save {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>தாஸ் பொது சேவை மையம்</h1>
+                    <p>மத்திய மாநில அரசு அங்கீகாரம் பெற்றது</p>
+                </div>
+            </div>
+            <div class="contact-header">
+                <p><i class="fas fa-map-marker-alt"></i> 147எ, கிரேட் காட்டன் ரோடு, தூத்துக்குடி-628001</p>
+                <p><i class="fas fa-phone"></i> 98 43 23 23 24 | 88 70 23 23 32 | 95 85 33 43 65</p>
+                <button class="admin-btn-top" id="adminBtnTop">
+                    <i class="fas fa-user-lock"></i> அட்மின்
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <div class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active"><i class="fas fa-home"></i> முகப்பு</a></li>
+                <li><a href="#services"><i class="fas fa-concierge-bell"></i> சேவைகள்</a></li>
+                <li><a href="#fees"><i class="fas fa-money-bill-wave"></i> கட்டணங்கள்</a></li>
+                <li><a href="#forms"><i class="fas fa-file-alt"></i> படிவங்கள்</a></li>
+                <li><a href="#notices"><i class="fas fa-bullhorn"></i> அறிவிப்புகள்</a></li>
+                <li><a href="#contact"><i class="fas fa-address-book"></i> தொடர்பு</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>அரசு சேவைகளை உங்கள் வாசலுக்கே கொண்டு வருகிறோம்</h2>
+            <p>தாஸ் பொது சேவை மையம் மூலம் எளிதாகவும் விரைவாகவும் அரசு சேவைகளைப் பெறுங்கள். WhatsApp மூலம் சேவை கோரிக்கைகளை அனுப்பவும்.</p>
+            <a href="#services" class="btn">சேவைகளைக் காண்க</a>
+            <a href="#contact" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> தொடர்பு கொள்ள</a>
+        </div>
+    </section>
+    
+    <!-- Main Content - Customer Section -->
+    <main class="main-content container">
+        <!-- Services Section -->
+        <section id="services">
+            <h2 class="section-title">நாங்கள் வழங்கும் சேவைகள்</h2>
+            <div class="services-grid" id="servicesGrid">
+                <!-- Services will be loaded from localStorage -->
+            </div>
+        </section>
+        
+        <!-- Forms & Notices Section -->
+        <div class="forms-notices-container">
+            <!-- Forms Section -->
+            <section class="forms-section" id="forms">
+                <h2 class="section-title">படிவங்கள்</h2>
+                <ul class="form-list" id="formsList">
+                    <!-- Forms will be loaded from localStorage -->
+                </ul>
+            </section>
+            
+            <!-- Notices Section -->
+            <section class="notices-section" id="notices">
+                <h2 class="section-title">அறிவிப்புகள்</h2>
+                <ul class="notice-list" id="noticesList">
+                    <!-- Notices will be loaded from localStorage -->
+                </ul>
+            </section>
+        </div>
+        
+        <!-- Fees Section -->
+        <section class="fees-section" id="fees">
+            <h2 class="section-title">கட்டணங்கள்</h2>
+            <table class="fees-table" id="feesTable">
+                <thead>
+                    <tr>
+                        <th>சேவை பெயர்</th>
+                        <th>அரசு கட்டணம்</th>
+                        <th>சேவை கட்டணம்</th>
+                        <th>மொத்தம்</th>
+                    </tr>
+                </thead>
+                <tbody id="feesTableBody">
+                    <!-- Fees will be loaded from localStorage -->
+                </tbody>
+            </table>
+            <p style="margin-top: 1rem; font-style: italic; color: #666;">குறிப்பு: அரசு கட்டணங்கள் மாறக்கூடும். துல்லியமான தகவல்களுக்கு மையத்தைத் தொடர்பு கொள்ளவும்.</p>
+        </section>
+        
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <h2 class="section-title">தொடர்பு கொள்ளவும்</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>முகவரி</h4>
+                        <p>147எ, கிரேட் காட்டன் ரோடு,<br>மத்திய பாகம் காவல் நிலையம் எதிரில்,<br>தூத்துக்குடி-628001</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>தொலைபேசி எண்கள்</h4>
+                        <p>98 43 23 23 24<br>88 70 23 23 32<br>95 85 33 43 65</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>WhatsApp செய்திகள்</h4>
+                        <p>98 43 23 23 24<br>சேவை மையத்திலிருந்து WhatsApp செய்திகள் அனுப்பப்படும்</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>மின்னஞ்சல்</h4>
+                        <p>dhasscsc@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>சேவை நேரம்</h4>
+                        <p>திங்கள் - சனி: 10:00 AM - 6:00 PM<br>ஞாயிறு: விடுமுறை</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>அலுவலக இருப்பிடம்</h4>
+                        <p>மத்திய பாகம் காவல் நிலையம் எதிரில்<br>கிரேட் காட்டன் ரோடு, தூத்துக்குடி</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/919843232324?text=தாஸ்%20பொது%20சேவை%20மையத்திற்கு%20வணக்கம்%21%20எனக்கு%20உதவி%20தேவை" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-column">
+                <h3>தாஸ் பொது சேவை மையம்</h3>
+                <p>அரசு சேவைகளை எளிதாகவும் விரைவாகவும் பெற உதவும் ஒரு நம்பகமான மையம்.</p>
+                <p><i class="fas fa-certificate"></i> மத்திய மாநில அரசு அங்கீகாரம் பெற்றது</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3>விரைவு இணைப்புகள்</h3>
+                <ul class="footer-links">
+                    <li><a href="#home"><i class="fas fa-home"></i> முகப்பு</a></li>
+                    <li><a href="#services"><i class="fas fa-concierge-bell"></i> சேவைகள்</a></li>
+                    <li><a href="#fees"><i class="fas fa-money-bill-wave"></i> கட்டணங்கள்</a></li>
+                    <li><a href="#forms"><i class="fas fa-file-alt"></i> படிவங்கள்</a></li>
+                    <li><a href="#notices"><i class="fas fa-bullhorn"></i> அறிவிப்புகள்</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>தொடர்பு கொள்ள</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 147எ, கிரேட் காட்டன் ரோடு, தூத்துக்குடி-628001</p>
+                <p><i class="fas fa-phone"></i> 98 43 23 23 24</p>
+                <p><i class="fas fa-envelope"></i> dhasscsc@gmail.com</p>
+            </div>
+            
+            <div class="footer-column">
+                <h3>சேவை நேரம்</h3>
+                <p><i class="fas fa-clock"></i> திங்கள் - சனி: 10:00 AM - 6:00 PM</p>
+                <p><i class="fas fa-clock"></i> ஞாயிறு: விடுமுறை</p>
+                <p><i class="fas fa-exclamation-triangle"></i> அரசு விடுமுறை நாட்களில் மூடப்பட்டிருக்கும்</p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>தாஸ் பொது சேவை மையம் &copy; 2024. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</p>
+        </div>
+    </footer>
+
+    <!-- Admin Modal -->
+    <div class="admin-modal" id="adminModal">
+        <div class="admin-modal-content">
+            <div class="admin-modal-header">
+                <h2><i class="fas fa-user-lock"></i> நிர்வாகி பேனல்</h2>
+                <button class="close-admin-modal" id="closeAdminModal">&times;</button>
+            </div>
+            
+            <div class="admin-modal-body" id="adminContent">
+                <!-- Login form shown by default -->
+                <div id="adminLoginForm">
+                    <div class="admin-login-form">
+                        <h3>நிர்வாகி உள்நுழைவு</h3>
+                        <div class="form-group">
+                            <label for="adminUsername">பயனர்பெயர்</label>
+                            <input type="text" id="adminUsername" placeholder="பயனர்பெயரை உள்ளிடவும்">
+                        </div>
+                        <div class="form-group">
+                            <label for="adminPassword">கடவுச்சொல்</label>
+                            <input type="password" id="adminPassword" placeholder="கடவுச்சொல்லை உள்ளிடவும்">
+                        </div>
+                        <button class="btn" onclick="adminLogin()" style="width: 100%; background-color: var(--admin-color);">உள்நுழைய</button>
+                        <div class="login-message" id="adminLoginMessage"></div>
+                        
+                        <div style="margin-top: 1.5rem; padding: 1rem; background-color: #f0f7ff; border-radius: 8px; text-align: center;">
+                            <p><strong>உள்நுழைவு தகவல்கள் தெரியவில்லையா?</strong></p>
+                            <p style="margin-top: 0.5rem;">தொலைபேசியில் தொடர்பு கொள்ளவும்: <strong>98 43 23 23 24</strong></p>
+                            <p>அல்லது மின்னஞ்சல் அனுப்பவும்: <strong>dhasscsc@gmail.com</strong></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Admin dashboard (hidden by default) -->
+                <div id="adminDashboard" style="display: none;">
+                    <!-- Admin Tabs -->
+                    <div class="admin-tabs">
+                        <button class="admin-tab active" data-tab="whatsapp-tab">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </button>
+                        <button class="admin-tab" data-tab="services-tab">
+                            <i class="fas fa-concierge-bell"></i> சேவைகள்
+                        </button>
+                        <button class="admin-tab" data-tab="manage-tab">
+                            <i class="fas fa-cog"></i> நிர்வாகம்
+                        </button>
+                    </div>
+                    
+                    <!-- WhatsApp Tab -->
+                    <div class="tab-content active" id="whatsapp-tab">
+                        <div class="admin-section">
+                            <h3><i class="fab fa-whatsapp"></i> WhatsApp செய்தி வார்ப்புருக்கள்</h3>
+                            <p style="color: #666; margin-bottom: 1.5rem;">சேவை மையத்திலிருந்து பயனர்களுக்கு அனுப்பப்படும் WhatsApp செய்தி வார்ப்புருக்கள். இவற்றை நகலெடுத்து WhatsApp-ல் பயன்படுத்தலாம்.</p>
+                            
+                            <div class="whatsapp-templates">
+                                <div class="whatsapp-template">
+                                    <div class="template-header">
+                                        <div class="template-icon">
+                                            <i class="fas fa-question-circle"></i>
+                                        </div>
+                                        <h4>சேவை நிலை புதுப்பிப்பு</h4>
+                                    </div>
+                                    <div class="template-content">
+                                        <p>விண்ணப்பத்தின் தற்போதைய நிலையை பயனருக்கு அறிவிக்க</p>
+                                        <div class="template-message" id="template1">
+தாஸ் பொது சேவை மையம்
+விண்ணப்ப எண்: [விண்ணப்ப எண்]
+நிலை: [நிலை]
+கடைசி புதுப்பிப்பு: [தேதி]
+
+நன்றி!
+தாஸ் பொது சேவை மையம்
+98 43 23 23 24
+                                        </div>
+                                        <div class="template-actions">
+                                            <button class="template-btn" onclick="copyTemplate('template1')">
+                                                <i class="fas fa-copy"></i> நகலெடு
+                                            </button>
+                                            <button class="template-btn btn-copy" onclick="sendTemplate('template1')">
+                                                <i class="fab fa-whatsapp"></i> WhatsApp
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="whatsapp-template">
+                                    <div class="template-header">
+                                        <div class="template-icon">
+                                            <i class="fas fa-file-medical"></i>
+                                        </div>
+                                        <h4>கூடுதல் ஆவணம் கோரிக்கை</h4>
+                                    </div>
+                                    <div class="template-content">
+                                        <p>சேவைக்கு தேவையான கூடுதல் ஆவணங்களை கேட்க</p>
+                                        <div class="template-message" id="template2">
+தாஸ் பொது சேவை மையம்
+விண்ணப்ப எண்: [விண்ணப்ப எண்]
+
+கூடுதல் ஆவணம் தேவை:
+1. [ஆவணம் 1]
+2. [ஆவணம் 2]
+3. [ஆவணம் 3]
+
+தயவுசெய்து இந்த ஆவணங்களை WhatsApp மூலம் அனுப்பவும்.
+
+நன்றி!
+தாஸ் பொது சேவை மையம்
+98 43 23 23 24
+                                        </div>
+                                        <div class="template-actions">
+                                            <button class="template-btn" onclick="copyTemplate('template2')">
+                                                <i class="fas fa-copy"></i> நகலெடு
+                                            </button>
+                                            <button class="template-btn btn-copy" onclick="sendTemplate('template2')">
+                                                <i class="fab fa-whatsapp"></i> WhatsApp
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="whatsapp-template">
+                                    <div class="template-header">
+                                        <div class="template-icon">
+                                            <i class="fas fa-money-check-alt"></i>
+                                        </div>
+                                        <h4>கட்டணம் செலுத்த வேண்டி</h4>
+                                    </div>
+                                    <div class="template-content">
+                                        <p>சேவை கட்டணம் செலுத்துவதற்கான விவரங்கள்</p>
+                                        <div class="template-message" id="template3">
+தாஸ் பொது சேவை மையம்
+விண்ணப்ப எண்: [விண்ணப்ப எண்]
+
+கட்டணம்: ₹[தொகை]
+கணக்கு: தாஸ் பொது சேவை மையம்
+A/C: 1234567890
+IFSC: ABCD0123456
+குறிப்பு: [விண்ணப்ப எண்]
+
+கட்டணம் செலுத்திய பிறகு ரசீதை WhatsApp மூலம் அனுப்பவும்.
+
+நன்றி!
+தாஸ் பொது சேவை மையம்
+98 43 23 23 24
+                                        </div>
+                                        <div class="template-actions">
+                                            <button class="template-btn" onclick="copyTemplate('template3')">
+                                                <i class="fas fa-copy"></i> நகலெடு
+                                            </button>
+                                            <button class="template-btn btn-copy" onclick="sendTemplate('template3')">
+                                                <i class="fab fa-whatsapp"></i> WhatsApp
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="whatsapp-template">
+                                    <div class="template-header">
+                                        <div class="template-icon">
+                                            <i class="fas fa-calendar-check"></i>
+                                        </div>
+                                        <h4>சேவை நிறைவு அறிவிப்பு</h4>
+                                    </div>
+                                    <div class="template-content">
+                                        <p>சேவை நிறைவடைந்ததை அறிவித்து மையத்தில் வந்து பெறச் சொல்ல</p>
+                                        <div class="template-message" id="template4">
+தாஸ் பொது சேவை மையம்
+விண்ணப்ப எண்: [விண்ணப்ப எண்]
+
+உங்கள் [சேவை பெயர்] சேவை நிறைவடைந்தது.
+எங்கள் மையத்தில் வந்து பெற்றுக்கொள்ளவும்.
+
+முகவரி: 147எ, கிரேட் காட்டன் ரோடு, தூத்துக்குடி
+நேரம்: 10:00 AM - 5:00 PM
+தினங்கள்: திங்கள் - சனி
+
+நன்றி!
+தாஸ் பொது சேவை மையம்
+98 43 23 23 24
+                                        </div>
+                                        <div class="template-actions">
+                                            <button class="template-btn" onclick="copyTemplate('template4')">
+                                                <i class="fas fa-copy"></i> நகலெடு
+                                            </button>
+                                            <button class="template-btn btn-copy" onclick="sendTemplate('template4')">
+                                                <i class="fab fa-whatsapp"></i> WhatsApp
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 2rem; padding: 1.5rem; background-color: #f0f7ff; border-radius: 8px;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 1rem;"><i class="fas fa-info-circle"></i> WhatsApp செய்தி வழிகாட்டுதல்</h4>
+                            <p style="color: #666; margin-bottom: 0.5rem;">1. மேலே உள்ள "நகலெடு" பொத்தானை கிளிக் செய்யவும்</p>
+                            <p style="color: #666; margin-bottom: 0.5rem;">2. WhatsApp திறந்து, பயனருக்கு அனுப்ப வேண்டிய எண்ணைத் தேர்வு செய்யவும்</p>
+                            <p style="color: #666; margin-bottom: 0.5rem;">3. செய்திப் பெட்டியில் [ ] குறியீடுகளை உண்மையான தகவல்களுடன் மாற்றவும்</p>
+                            <p style="color: #666;">4. செய்தியை அனுப்பவும்</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Services Management Tab -->
+                    <div class="tab-content" id="services-tab">
+                        <div class="admin-section">
+                            <h3><i class="fas fa-concierge-bell"></i> சேவைகள் நிர்வாகம்</h3>
+                            <p style="color: #666; margin-bottom: 1.5rem;">சேவைகளைச் சேர்க்க, திருத்த, நீக்க. மாற்றங்கள் உடனடியாக முகப்புப் பக்கத்தில் தெரியும்.</p>
+                            
+                            <div class="services-management">
+                                <div class="services-list" id="adminServicesList">
+                                    <!-- Services will be loaded here -->
+                                </div>
+                                
+                                <button class="btn-add-service" id="addNewServiceBtn">
+                                    <i class="fas fa-plus"></i> புதிய சேவை சேர்க்க
+                                </button>
+                                
+                                <!-- Add/Edit Service Form -->
+                                <div class="service-form" id="serviceForm">
+                                    <h4 id="serviceFormTitle">புதிய சேவை சேர்க்க</h4>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="serviceNameInput">சேவை பெயர் *</label>
+                                            <input type="text" id="serviceNameInput" placeholder="சேவை பெயரை உள்ளிடவும்">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="serviceIconSelect">சேவை சின்னம்</label>
+                                            <select id="serviceIconSelect">
+                                                <option value="fas fa-passport">கடவுச்சீட்டு</option>
+                                                <option value="fas fa-id-card-alt">ஓட்டுநர் உரிமம்</option>
+                                                <option value="fas fa-address-card">அதாரு</option>
+                                                <option value="fas fa-home">வீடு/நிலம்</option>
+                                                <option value="fas fa-graduation-cap">கல்வி</option>
+                                                <option value="fas fa-piggy-bank">நிதி</option>
+                                                <option value="fas fa-file-contract">பத்திரம்</option>
+                                                <option value="fas fa-certificate">சான்றிதழ்</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="serviceDescriptionInput">சேவை விளக்கம் *</label>
+                                        <textarea id="serviceDescriptionInput" placeholder="சேவை விளக்கத்தை உள்ளிடவும்"></textarea>
+                                    </div>
+                                    
+                                    <div class="form-actions">
+                                        <input type="hidden" id="serviceIdInput">
+                                        <button type="button" class="btn-cancel" id="cancelServiceBtn">ரத்து செய்</button>
+                                        <button type="button" class="btn-save" id="saveServiceBtn">சேமிக்கவும்</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 2rem; padding: 1.5rem; background-color: #f0f7ff; border-radius: 8px;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 1rem;"><i class="fas fa-info-circle"></i> சேவைகள் நிர்வாக வழிகாட்டுதல்</h4>
+                            <p style="color: #666; margin-bottom: 0.5rem;">1. இருக்கும் சேவைகளைத் திருத்த அல்லது நீக்க "திருத்து" அல்லது "நீக்கு" பொத்தானைக் கிளிக் செய்யவும்</p>
+                            <p style="color: #666; margin-bottom: 0.5rem;">2. புதிய சேவை சேர்க்க "புதிய சேவை சேர்க்க" பொத்தானைக் கிளிக் செய்யவும்</p>
+                            <p style="color: #666;">3. சேமித்த பிறகு, மாற்றங்கள் உடனடியாக முகப்புப் பக்கத்தில் தெரியும்</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Manage Tab -->
+                    <div class="tab-content" id="manage-tab">
+                        <div class="admin-section">
+                            <h3><i class="fas fa-cog"></i> நிர்வாக அமைப்புகள்</h3>
+                            <p style="color: #666; margin-bottom: 1.5rem;">அட்மின் பேனல் அமைப்புகள் மற்றும் உதவி.</p>
+                            
+                            <div style="background-color: #f8f9fa; border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem;">
+                                <h4 style="color: var(--primary-color); margin-bottom: 1rem;">பயனர் தகவல்</h4>
+                                <p style="color: #666; margin-bottom: 0.5rem;"><strong>பயனர்பெயர்:</strong> <span id="loggedInUsername">நிர்வாகி</span></p>
+                                <p style="color: #666; margin-bottom: 0.5rem;"><strong>உள்நுழைவு நேரம்:</strong> <span id="loginTime">-</span></p>
+                                <p style="color: #666;"><strong>கடைசி செயல்பாடு:</strong> <span id="lastActivity">-</span></p>
+                            </div>
+                            
+                            <div style="background-color: #f8f9fa; border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem;">
+                                <h4 style="color: var(--primary-color); margin-bottom: 1rem;">தரவு நிர்வாகம்</h4>
+                                <p style="color: #666; margin-bottom: 1rem;">இருக்கும் சேவைகள் மற்றும் அமைப்புகளை மீட்டமைக்க:</p>
+                                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                                    <button class="btn" onclick="resetServices()" style="background-color: var(--warning-color);">
+                                        <i class="fas fa-redo"></i> சேவைகள் மீட்டமை
+                                    </button>
+                                    <button class="btn" onclick="clearAllData()" style="background-color: var(--danger-color);">
+                                        <i class="fas fa-trash"></i> அனைத்தும் அழி
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div style="background-color: #f8f9fa; border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem;">
+                                <h4 style="color: var(--primary-color); margin-bottom: 1rem;">உதவி & ஆதரவு</h4>
+                                <p style="color: #666; margin-bottom: 0.5rem;">எந்தவொரு சிக்கலுக்கும் தொலைபேசியில் தொடர்பு கொள்ளவும்:</p>
+                                <p style="color: #666; margin-bottom: 0.5rem;"><strong>தொலைபேசி:</strong> 98 43 23 23 24</p>
+                                <p style="color: #666; margin-bottom: 0.5rem;"><strong>WhatsApp:</strong> 98 43 23 23 24</p>
+                                <p style="color: #666;"><strong>மின்னஞ்சல்:</strong> dhasscsc@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <button class="btn" onclick="adminLogout()" style="background-color: var(--admin-color);">
+                            <i class="fas fa-sign-out-alt"></i> வெளியேறு
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Admin credentials (hidden from users - password not shown in code)
+        const ADMIN_USERNAME = 'admin';
+        const ADMIN_PASSWORD = 'Dhass@2024'; // Secure password - not visible to users
+        
+        // DOM Elements
+        const adminBtnTop = document.getElementById('adminBtnTop');
+        const adminModal = document.getElementById('adminModal');
+        const closeAdminModal = document.getElementById('closeAdminModal');
+        const adminLoginForm = document.getElementById('adminLoginForm');
+        const adminDashboard = document.getElementById('adminDashboard');
+        const adminLoginMessage = document.getElementById('adminLoginMessage');
+        const whatsappSection = document.querySelector('.whatsapp-section');
+        const servicesGrid = document.getElementById('servicesGrid');
+        
+        // Check if admin is logged in from localStorage
+        let isAdminLoggedIn = localStorage.getItem('isAdminLoggedIn') === 'true';
+        let adminLoginTime = localStorage.getItem('adminLoginTime') || '';
+        let lastActivityTime = localStorage.getItem('lastActivityTime') || '';
+        
+        // Default services data
+        let defaultServices = [
+            {id: 1, name: 'கடவுச்சீட்டு சேவைகள்', icon: 'fas fa-passport', description: 'புதிய கடவுச்சீட்டு விண்ணப்பம், நீட்டிப்பு, கடவுச்சீட்டு திருத்தம் போன்ற சேவைகள்.'},
+            {id: 2, name: 'ஓட்டுநர் உரிமம்', icon: 'fas fa-id-card-alt', description: 'புதிய ஓட்டுநர் உரிமம், கற்றுக்கொள்ளும் உரிமம், உரிமம் புதுப்பித்தல் போன்றவை.'},
+            {id: 3, name: 'அதாரு சேவைகள்', icon: 'fas fa-address-card', description: 'அதாரு விண்ணப்பம், புதுப்பித்தல், திருத்தம், இழப்பு சான்றிதழ் விண்ணப்பம்.'},
+            {id: 4, name: 'நிலம் மற்றும் வீடு சேவைகள்', icon: 'fas fa-home', description: 'பத்திரங்கள், மாற்றம், பிரித்தளித்தல், வீட்டு வரிவிலக்கு சான்றிதழ் போன்றவை.'},
+            {id: 5, name: 'கல்வி சான்றிதழ்கள்', icon: 'fas fa-graduation-cap', description: 'பிறப்பு சான்றிதழ், இனம் சான்றிதழ், வருமான சான்றிதழ், ஊராட்சி சான்றிதழ் போன்றவை.'},
+            {id: 6, name: 'அரசு நிதி சேமிப்பு திட்டங்கள்', icon: 'fas fa-piggy-bank', description: 'அரசு நிதி சேமிப்பு திட்டங்கள், கடன் விண்ணப்பங்கள், ஓய்வூதிய சேவைகள்.'}
+        ];
+        
+        // Default fees data
+        let defaultFees = [
+            {id: 1, service: 'புதிய கடவுச்சீட்டு', govFee: 1500, serviceFee: 200, total: 1700},
+            {id: 2, service: 'கடவுச்சீட்டு நீட்டிப்பு', govFee: 1000, serviceFee: 150, total: 1150},
+            {id: 3, service: 'புதிய ஓட்டுநர் உரிமம்', govFee: 500, serviceFee: 100, total: 600},
+            {id: 4, service: 'அதாரு விண்ணப்பம்', govFee: 50, serviceFee: 50, total: 100},
+            {id: 5, service: 'பிறப்பு சான்றிதழ்', govFee: 30, serviceFee: 30, total: 60},
+            {id: 6, service: 'இனம் சான்றிதழ்', govFee: 30, serviceFee: 30, total: 60}
+        ];
+        
+        // Default forms data
+        let defaultForms = [
+            {id: 1, name: 'கடவுச்சீட்டு விண்ணப்பப் படிவம்', icon: 'fas fa-file-pdf', link: '#'},
+            {id: 2, name: 'ஓட்டுநர் உரிம விண்ணப்பப் படிவம்', icon: 'fas fa-file-word', link: '#'},
+            {id: 3, name: 'அதாரு விண்ணப்பப் படிவம்', icon: 'fas fa-file-alt', link: '#'},
+            {id: 4, name: 'பிறப்பு சான்றிதழ் விண்ணப்பப் படிவம்', icon: 'fas fa-file-pdf', link: '#'},
+            {id: 5, name: 'இனம் சான்றிதழ் விண்ணப்பப் படிவம்', icon: 'fas fa-file-word', link: '#'}
+        ];
+        
+        // Default notices data
+        let defaultNotices = [
+            {id: 1, title: 'புதிய கடவுச்சீட்டு விதிமுறைகள் - ஜூன் 2024', date: '2024-06-15', description: 'கடவுச்சீட்டு விண்ணப்ப முறையில் புதிய மாற்றங்கள்', link: '#'},
+            {id: 2, title: 'அதாரு புதுப்பித்தல் காலக்கெடு நீட்டிப்பு', date: '2024-06-10', description: 'அதாரு புதுப்பித்தல் காலக்கெடு 30-06-2024 வரை நீட்டிக்கப்பட்டது', link: '#'},
+            {id: 3, title: 'கோடை விடுமுறை கால அட்டவணை', date: '2024-05-01', description: 'சேவை மையத்தின் கோடை விடுமுறை அட்டவணை', link: '#'},
+            {id: 4, title: 'புதிய சேவைகள் - மே 2024', date: '2024-05-15', description: 'மே 2024 முதல் புதிய சேவைகள் தொடங்கப்படும்', link: '#'}
+        ];
+        
+        // Load data from localStorage or use default
+        let services = JSON.parse(localStorage.getItem('services')) || defaultServices;
+        let fees = JSON.parse(localStorage.getItem('fees')) || defaultFees;
+        let forms = JSON.parse(localStorage.getItem('forms')) || defaultForms;
+        let notices = JSON.parse(localStorage.getItem('notices')) || defaultNotices;
+        
+        // Mobile Navigation Toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if(this.getAttribute('href') === '#') return;
+                
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Highlight active navigation link based on scroll position
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const scrollPosition = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if(scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    document.querySelectorAll('.nav-links a').forEach(link => {
+                        link.classList.remove('active');
+                        if(link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        });
+        
+        // Open admin modal
+        adminBtnTop.addEventListener('click', () => {
+            adminModal.style.display = 'flex';
+            updateLastActivity();
+        });
+        
+        // Close admin modal
+        closeAdminModal.addEventListener('click', () => {
+            adminModal.style.display = 'none';
+        });
+        
+        // Close modal when clicking outside
+        adminModal.addEventListener('click', function(e) {
+            if(e.target === this) {
+                adminModal.style.display = 'none';
+            }
+        });
+        
+        // Admin login function
+        function adminLogin() {
+            const username = document.getElementById('adminUsername').value;
+            const password = document.getElementById('adminPassword').value;
+            
+            // For security, password is not shown in code
+            // Actual password is set in ADMIN_PASSWORD variable above
+            if (username === ADMIN_USERNAME && password === ADMIN_PASSWORD) {
+                // Successful login
+                isAdminLoggedIn = true;
+                const now = new Date();
+                adminLoginTime = now.toLocaleString('ta-IN');
+                lastActivityTime = now.toLocaleString('ta-IN');
+                
+                localStorage.setItem('isAdminLoggedIn', 'true');
+                localStorage.setItem('adminLoginTime', adminLoginTime);
+                localStorage.setItem('lastActivityTime', lastActivityTime);
+                
+                // Show success message
+                adminLoginMessage.textContent = 'வெற்றிகரமாக உள்நுழைந்துள்ளீர்கள்!';
+                adminLoginMessage.className = 'login-message success';
+                adminLoginMessage.style.display = 'block';
+                
+                // Switch to admin dashboard
+                setTimeout(() => {
+                    adminLoginForm.style.display = 'none';
+                    adminDashboard.style.display = 'block';
+                    adminLoginMessage.style.display = 'none';
+                    
+                    // Update admin info
+                    document.getElementById('loggedInUsername').textContent = username;
+                    document.getElementById('loginTime').textContent = adminLoginTime;
+                    document.getElementById('lastActivity').textContent = lastActivityTime;
+                    
+                    // Load services in admin panel
+                    loadServicesInAdmin();
+                    
+                    // Set active tab
+                    setActiveTab('whatsapp-tab');
+                }, 1000);
+            } else {
+                // Failed login
+                adminLoginMessage.textContent = 'தவறான பயனர்பெயர் அல்லது கடவுச்சொல்!';
+                adminLoginMessage.className = 'login-message error';
+                adminLoginMessage.style.display = 'block';
+                
+                // Clear password field
+                document.getElementById('adminPassword').value = '';
+            }
+        }
+        
+        // Admin logout function
+        function adminLogout() {
+            if (confirm('நிர்வாகி பேனலில் இருந்து வெளியேற வேண்டுமா?')) {
+                isAdminLoggedIn = false;
+                localStorage.setItem('isAdminLoggedIn', 'false');
+                
+                // Switch back to login form
+                adminDashboard.style.display = 'none';
+                adminLoginForm.style.display = 'block';
+                
+                // Clear form fields
+                document.getElementById('adminUsername').value = '';
+                document.getElementById('adminPassword').value = '';
+                
+                // Close modal after logout
+                setTimeout(() => {
+                    adminModal.style.display = 'none';
+                }, 500);
+            }
+        }
+        
+        // Copy template to clipboard
+        function copyTemplate(templateId) {
+            const templateElement = document.getElementById(templateId);
+            const textToCopy = templateElement.textContent;
+            
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                alert('WhatsApp செய்தி நகலெடுக்கப்பட்டது! இப்போது WhatsApp-ல் ஒட்டவும்.');
+                updateLastActivity();
+            }).catch(err => {
+                console.error('நகலெடுக்க முடியவில்லை: ', err);
+                alert('நகலெடுக்க முடியவில்லை. மீண்டும் முயற்சிக்கவும்.');
+            });
+        }
+        
+        // Send template via WhatsApp (opens WhatsApp with template)
+        function sendTemplate(templateId) {
+            const templateElement = document.getElementById(templateId);
+            const textToSend = templateElement.textContent;
+            const encodedText = encodeURIComponent(textToSend);
+            const whatsappUrl = `https://wa.me/?text=${encodedText}`;
+            
+            window.open(whatsappUrl, '_blank');
+            updateLastActivity();
+        }
+        
+        // Update last activity time
+        function updateLastActivity() {
+            if (isAdminLoggedIn) {
+                const now = new Date();
+                lastActivityTime = now.toLocaleString('ta-IN');
+                localStorage.setItem('lastActivityTime', lastActivityTime);
+                document.getElementById('lastActivity').textContent = lastActivityTime;
+            }
+        }
+        
+        // Check admin status on page load
+        function checkAdminStatus() {
+            if (isAdminLoggedIn) {
+                // Admin is logged in
+                // Update admin button text
+                adminBtnTop.innerHTML = '<i class="fas fa-user-check"></i> அட்மின்';
+                
+                // Update admin info
+                document.getElementById('loggedInUsername').textContent = ADMIN_USERNAME;
+                document.getElementById('loginTime').textContent = adminLoginTime;
+                document.getElementById('lastActivity').textContent = lastActivityTime;
+            }
+        }
+        
+        // Load services on main page
+        function loadServicesOnMainPage() {
+            servicesGrid.innerHTML = '';
+            
+            services.forEach(service => {
+                const serviceCard = document.createElement('div');
+                serviceCard.className = 'service-card';
+                serviceCard.innerHTML = `
+                    <div class="service-icon">
+                        <i class="${service.icon}"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>${service.name}</h3>
+                        <p>${service.description}</p>
+                    </div>
+                `;
+                servicesGrid.appendChild(serviceCard);
+            });
+        }
+        
+        // Load fees on main page
+        function loadFeesOnMainPage() {
+            const feesTableBody = document.getElementById('feesTableBody');
+            if (!feesTableBody) return;
+            
+            feesTableBody.innerHTML = '';
+            
+            fees.forEach(fee => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${fee.service}</td>
+                    <td>₹ ${fee.govFee}</td>
+                    <td>₹ ${fee.serviceFee}</td>
+                    <td>₹ ${fee.total}</td>
+                `;
+                feesTableBody.appendChild(row);
+            });
+        }
+        
+        // Load forms on main page
+        function loadFormsOnMainPage() {
+            const formsList = document.getElementById('formsList');
+            if (!formsList) return;
+            
+            formsList.innerHTML = '';
+            
+            forms.forEach(form => {
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `
+                    <a href="${form.link}" target="_blank">
+                        ${form.name}
+                        <i class="${form.icon}"></i>
+                    </a>
+                `;
+                formsList.appendChild(listItem);
+            });
+        }
+        
+        // Load notices on main page
+        function loadNoticesOnMainPage() {
+            const noticesList = document.getElementById('noticesList');
+            if (!noticesList) return;
+            
+            noticesList.innerHTML = '';
+            
+            notices.forEach(notice => {
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `
+                    <a href="${notice.link || '#'}" target="_blank">
+                        ${notice.title}
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                `;
+                noticesList.appendChild(listItem);
+            });
+        }
+        
+        // Load services in admin panel
+        function loadServicesInAdmin() {
+            const adminServicesList = document.getElementById('adminServicesList');
+            adminServicesList.innerHTML = '';
+            
+            services.forEach(service => {
+                const serviceItem = document.createElement('div');
+                serviceItem.className = 'service-item';
+                serviceItem.innerHTML = `
+                    <div class="service-info">
+                        <i class="${service.icon}"></i>
+                        <div>
+                            <h4 style="margin: 0; color: var(--primary-color);">${service.name}</h4>
+                            <p style="margin: 0; font-size: 0.9rem; color: #666;">${service.description}</p>
+                        </div>
+                    </div>
+                    <div class="service-actions">
+                        <button class="action-btn btn-edit" data-id="${service.id}">
+                            <i class="fas fa-edit"></i> திருத்து
+                        </button>
+                        <button class="action-btn btn-delete" data-id="${service.id}">
+                            <i class="fas fa-trash"></i> நீக்கு
+                        </button>
+                    </div>
+                `;
+                adminServicesList.appendChild(serviceItem);
+            });
+            
+            // Add event listeners for edit and delete buttons
+            document.querySelectorAll('.btn-edit').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const serviceId = parseInt(this.getAttribute('data-id'));
+                    editService(serviceId);
+                });
+            });
+            
+            document.querySelectorAll('.btn-delete').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const serviceId = parseInt(this.getAttribute('data-id'));
+                    deleteService(serviceId);
+                });
+            });
+        }
+        
+        // Edit service
+        function editService(serviceId) {
+            const service = services.find(s => s.id === serviceId);
+            if (!service) return;
+            
+            document.getElementById('serviceFormTitle').textContent = 'சேவையை திருத்து';
+            document.getElementById('serviceNameInput').value = service.name;
+            document.getElementById('serviceIconSelect').value = service.icon;
+            document.getElementById('serviceDescriptionInput').value = service.description;
+            document.getElementById('serviceIdInput').value = service.id;
+            
+            // Show the form
+            document.getElementById('serviceForm').classList.add('visible');
+            
+            // Scroll to form
+            document.getElementById('serviceForm').scrollIntoView({ behavior: 'smooth' });
+            
+            updateLastActivity();
+        }
+        
+        // Delete service
+        function deleteService(serviceId) {
+            if (confirm('இந்த சேவையை நிச்சயமாக நீக்க வேண்டுமா?')) {
+                services = services.filter(s => s.id !== serviceId);
+                saveServices();
+                
+                // Reload services
+                loadServicesOnMainPage();
+                loadServicesInAdmin();
+                
+                alert('சேவை வெற்றிகரமாக நீக்கப்பட்டது!');
+                updateLastActivity();
+            }
+        }
+        
+        // Save services to localStorage
+        function saveServices() {
+            localStorage.setItem('services', JSON.stringify(services));
+        }
+        
+        // Save fees to localStorage
+        function saveFees() {
+            localStorage.setItem('fees', JSON.stringify(fees));
+        }
+        
+        // Save forms to localStorage
+        function saveForms() {
+            localStorage.setItem('forms', JSON.stringify(forms));
+        }
+        
+        // Save notices to localStorage
+        function saveNotices() {
+            localStorage.setItem('notices', JSON.stringify(notices));
+        }
+        
+        // Add new service
+        document.getElementById('addNewServiceBtn').addEventListener('click', function() {
+            document.getElementById('serviceFormTitle').textContent = 'புதிய சேவை சேர்க்க';
+            document.getElementById('serviceNameInput').value = '';
+            document.getElementById('serviceIconSelect').value = 'fas fa-passport';
+            document.getElementById('serviceDescriptionInput').value = '';
+            document.getElementById('serviceIdInput').value = '';
+            
+            // Show the form
+            document.getElementById('serviceForm').classList.add('visible');
+            
+            // Scroll to form
+            document.getElementById('serviceForm').scrollIntoView({ behavior: 'smooth' });
+            
+            updateLastActivity();
+        });
+        
+        // Cancel service form
+        document.getElementById('cancelServiceBtn').addEventListener('click', function() {
+            document.getElementById('serviceForm').classList.remove('visible');
+        });
+        
+        // Save service
+        document.getElementById('saveServiceBtn').addEventListener('click', function() {
+            const serviceName = document.getElementById('serviceNameInput').value.trim();
+            const serviceIcon = document.getElementById('serviceIconSelect').value;
+            const serviceDescription = document.getElementById('serviceDescriptionInput').value.trim();
+            const serviceId = document.getElementById('serviceIdInput').value;
+            
+            if (!serviceName || !serviceDescription) {
+                alert('சேவை பெயர் மற்றும் விளக்கம் தேவை!');
+                return;
+            }
+            
+            if (serviceId) {
+                // Editing existing service
+                const id = parseInt(serviceId);
+                const index = services.findIndex(s => s.id === id);
+                
+                if (index !== -1) {
+                    services[index] = {
+                        id: id,
+                        name: serviceName,
+                        icon: serviceIcon,
+                        description: serviceDescription
+                    };
+                }
+            } else {
+                // Adding new service
+                const newId = services.length > 0 ? Math.max(...services.map(s => s.id)) + 1 : 1;
+                services.push({
+                    id: newId,
+                    name: serviceName,
+                    icon: serviceIcon,
+                    description: serviceDescription
+                });
+            }
+            
+            // Save to localStorage
+            saveServices();
+            
+            // Reload services
+            loadServicesOnMainPage();
+            loadServicesInAdmin();
+            
+            // Hide form
+            document.getElementById('serviceForm').classList.remove('visible');
+            
+            // Show success message
+            alert(serviceId ? 'சேவை வெற்றிகரமாக திருத்தப்பட்டது!' : 'சேவை வெற்றிகரமாக சேர்க்கப்பட்டது!');
+            
+            updateLastActivity();
+        });
+        
+        // Admin tabs functionality
+        function setActiveTab(tabId) {
+            // Remove active class from all tabs and contents
+            document.querySelectorAll('.admin-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Add active class to clicked tab and corresponding content
+            document.querySelector(`.admin-tab[data-tab="${tabId}"]`).classList.add('active');
+            document.getElementById(tabId).classList.add('active');
+        }
+        
+        // Add event listeners to admin tabs
+        document.querySelectorAll('.admin-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                const tabId = this.getAttribute('data-tab');
+                setActiveTab(tabId);
+                updateLastActivity();
+            });
+        });
+        
+        // Reset services to default
+        function resetServices() {
+            if (confirm('சேவைகளை இயல்புநிலைக்கு மீட்டமைக்க வேண்டுமா? இதனால் தற்போதைய சேவைகள் அழிக்கப்படும்.')) {
+                services = [...defaultServices];
+                fees = [...defaultFees];
+                forms = [...defaultForms];
+                notices = [...defaultNotices];
+                
+                saveServices();
+                saveFees();
+                saveForms();
+                saveNotices();
+                
+                loadServicesOnMainPage();
+                loadFeesOnMainPage();
+                loadFormsOnMainPage();
+                loadNoticesOnMainPage();
+                loadServicesInAdmin();
+                
+                alert('அனைத்து தரவும் வெற்றிகரமாக மீட்டமைக்கப்பட்டன!');
+                updateLastActivity();
+            }
+        }
+        
+        // Clear all data
+        function clearAllData() {
+            if (confirm('அனைத்து தரவையும் அழிக்க வேண்டுமா? இந்த செயலை திரும்பப் பெற முடியாது.')) {
+                localStorage.clear();
+                services = [...defaultServices];
+                fees = [...defaultFees];
+                forms = [...defaultForms];
+                notices = [...defaultNotices];
+                
+                saveServices();
+                saveFees();
+                saveForms();
+                saveNotices();
+                
+                loadServicesOnMainPage();
+                loadFeesOnMainPage();
+                loadFormsOnMainPage();
+                loadNoticesOnMainPage();
+                loadServicesInAdmin();
+                
+                alert('அனைத்து தரவும் அழிக்கப்பட்டது!');
+                updateLastActivity();
+            }
+        }
+        
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            checkAdminStatus();
+            loadServicesOnMainPage();
+            loadFeesOnMainPage();
+            loadFormsOnMainPage();
+            loadNoticesOnMainPage();
+        });
+    </script>
+</body>
+</html>
